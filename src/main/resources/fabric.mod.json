@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "demonology",
+	"version": "${version}",
+	"name": "Demonology",
+	"description": "Demonology adds new demon biomes, factions, rituals, corruption-based gear, and dungeons for a fast, brutal, demon-focused progression experience.",
+	"authors": [
+		"whosdawidek"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/demonology/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"whosdawidek.demonology.Demonology"
+		],
+		"fabric-datagen": [
+			"whosdawidek.demonology.DemonologyDataGenerator"
+		],
+        "client": [
+            "whosdawidek.demonology.DemonologyClient"
+        ]
+	},
+	"mixins": [
+		"demonology.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

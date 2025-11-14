@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "whosdawidek.demonology.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"DemonologyMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
