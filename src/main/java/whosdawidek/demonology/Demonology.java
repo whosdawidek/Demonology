@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import whosdawidek.demonology.item.DemonologyItems;
 
 public class Demonology implements ModInitializer {
 	public static final String MOD_ID = "demonology";
@@ -11,5 +12,6 @@ public class Demonology implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        DemonologyItems.registerDemonologyItems();
 	}
 }
